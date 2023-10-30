@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PlotTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PlotTools/PlotTools_{{ version }}.tar.gz
-  sha256: 8cf04d3356c7f5c51ab338c63c9d4ae1301f6b81ff32462f9a333e26fa2ab13e
+  sha256: 6fbe19c9c8ab1696abb69d74671091bfb5fe13ee16cd302bd39de8b78266a3d6
 
 build:
   merge_build_host: true  # [win]
