@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PlotTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PlotTools/PlotTools_{{ version }}.tar.gz
-  sha256: 00a07943335b436cef88d119843f40ff7a57bf387cf68e9a70e24f109925c0dd
+  sha256: 1e66fd28f79b966751aa241e98a1a7eb4ebb1ade417f86eac14d79402b1fe58c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
